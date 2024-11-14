@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b73ab661-840a-4b64-b072-3764519be013" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BinaryStdIn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinaryStdOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenomeCompressor.class" afterDir="false" />
+    <list default="true" id="b73ab661-840a-4b64-b072-3764519be013" name="Changes" comment="Worklog">
+      <change afterPath="$PROJECT_DIR$/src/DumpBinary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/genomeBack.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/genomeSmall.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/virusEnd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/virusOut.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WORK_LOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/WORK_LOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenomeCompressor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenomeCompressor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GenomeCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenomeCompressor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,19 +46,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.GenomeCompressor.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.GenomeCompressor.executor": "Debug",
+    "Application.write out.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "terminal"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.write out">
+    <configuration name="GenomeCompressor" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GenomeCompressor" />
+      <module name="Genome Compressor Student Code" />
+      <option name="PROGRAM_PARAMETERS" value="+  &lt; Blick.bin &gt; out.txt " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="write out" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="GenomeCompressor" />
+      <module name="Genome Compressor Student Code" />
+      <option name="PROGRAM_PARAMETERS" value="+  &lt; Blick.bin &gt; out.txt " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.write out" />
+      <item itemvalue="Application.GenomeCompressor" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,9 +96,20 @@
       <option name="presentableId" value="Default" />
       <updated>1723575642960</updated>
     </task>
+    <task id="LOCAL-00001" summary="Worklog">
+      <option name="closed" value="true" />
+      <created>1731554476960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731554476960</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Worklog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worklog" />
   </component>
 </project>

@@ -16,6 +16,7 @@
  * @author Robert Sedgewick
  * @author Kevin Wayne
  * @author Zach Blick
+ * @author Noah Persily
  */
 public class GenomeCompressor {
 
@@ -25,16 +26,19 @@ public class GenomeCompressor {
      */
 
     public static void compress() {
-        int[] map = new int[128];
+        int[] map = new int['T' + 1];
         map['A'] = 0b00;
         map['C'] = 0b01;
         map['G'] = 0b10;
         map['T'] = 0b11;
+        String s = BinaryStdIn.readString();
+        int length = s.length();
+
+        BinaryStdOut.write(length);
 
 
-        while (!BinaryStdIn.isEmpty()) {
-            char c = BinaryStdIn.readChar();
-            BinaryStdOut.write(map[c], 2);
+        for (int i = 0; i < length; i++) {
+            BinaryStdOut.write(map[s.charAt(i)],2);
         }
 
         BinaryStdOut.close();
@@ -45,17 +49,15 @@ public class GenomeCompressor {
      */
     public static void expand() {
 
-        // TODO: complete the expand() method
         char[] map = new char[4];
         map[0b00] = 'A';
         map[0b01] = 'C';
-        map[0b10] = 'T';
-        map[0b11] = 'G';
+        map[0b10] = 'G';
+        map[0b11] = 'T';
 
-        BinaryStdOut.close();
-        while (!BinaryStdIn.isEmpty()) {
-            int i = BinaryStdIn.readInt(2);
-            BinaryStdOut.write(map[i]);
+        int length = BinaryStdIn.readInt();
+        for (int i = 0; i < length; i++) {
+            BinaryStdOut.write(map[BinaryStdIn.readInt(2)]);
         }
 
         BinaryStdOut.close();
