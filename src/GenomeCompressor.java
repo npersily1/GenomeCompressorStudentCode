@@ -26,19 +26,22 @@ public class GenomeCompressor {
      */
 
     public static void compress() {
+        // Map for letters to numbers
         int[] map = new int['T' + 1];
         map['A'] = 0b00;
         map['C'] = 0b01;
         map['G'] = 0b10;
         map['T'] = 0b11;
+
+
+        // Write the header to the file
         String s = BinaryStdIn.readString();
         int length = s.length();
-
         BinaryStdOut.write(length);
 
-
+        // Write each corresponding each letter's corresponding code
         for (int i = 0; i < length; i++) {
-            BinaryStdOut.write(map[s.charAt(i)],2);
+            BinaryStdOut.write(map[s.charAt(i)], 2);
         }
 
         BinaryStdOut.close();
@@ -48,22 +51,23 @@ public class GenomeCompressor {
      * Reads a binary sequence from standard input; expands and writes the results to standard output.
      */
     public static void expand() {
-
+        // Inverse of the map above
         char[] map = new char[4];
         map[0b00] = 'A';
         map[0b01] = 'C';
         map[0b10] = 'G';
         map[0b11] = 'T';
 
+        // Read in the header
         int length = BinaryStdIn.readInt();
+
+        // Write out the letter that corresponds to every two bit code
         for (int i = 0; i < length; i++) {
             BinaryStdOut.write(map[BinaryStdIn.readInt(2)]);
         }
 
         BinaryStdOut.close();
     }
-
-
 
 
     /**
